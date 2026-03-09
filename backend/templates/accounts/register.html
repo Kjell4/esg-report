@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% block title %}Регистрация — ESG Платформа{% endblock %}
+
+{% block auth_content %}
+<div class="min-vh-100 d-flex align-items-center justify-content-center py-4" style="background: linear-gradient(135deg, #1e2a38 0%, #2d7d46 100%);">
+    <div class="container" style="max-width: 520px;">
+
+        <div class="text-center mb-4">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-white mb-3" style="width:64px;height:64px;">
+                <i class="bi bi-leaf-fill text-success" style="font-size:1.8rem;"></i>
+            </div>
+            <h4 class="text-white fw-bold mb-1">ESG Платформа</h4>
+            <p class="text-white-50 small">Нефинансовая отчётность</p>
+        </div>
+
+        <div class="card auth-card">
+            <div class="auth-header">
+                <h5 class="mb-0 fw-semibold"><i class="bi bi-person-plus me-2"></i>Регистрация</h5>
+            </div>
+            <div class="card-body p-4">
+
+                <form method="post" novalidate>
+                    {% csrf_token %}
+
+                    <!-- Role selection -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold text-muted small">
+                            <i class="bi bi-person-badge me-1"></i>Тип аккаунта
+                        </label>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <label class="d-block border rounded-3 p-3 cursor-pointer" style="cursor:pointer;" id="role-respondent-label">
+                                    <input type="radio" name="role" value="respondent" class="form-check-input me-2"
+                                        {% if form.role.value == 'respondent' or not form.role.value %}checked{% endif %}
+                                        onchange="highlightRole()">
+                                    <strong class="d-block">Респондент</strong>
+                                    <small class="text-muted">Подача ESG отчётов</small>
+                                </label>
+                            </div>
+                            <div class="col-6">
+                                <label class="d-block border rounded-3 p-3" style="cursor:pointer;" id="role-viewer-label">
+                                    <input type="radio" name="role" value="viewer" class="form-check-input me-2"
+                                        {% if form.role.value == 'viewer' %}checked{% endif %}
+                                        onchange="highlightRole()">
+                                    <strong class="d-block">Пользователь</strong>
+                                    <small class="text-muted">Просмотр аналитики</small>
+                                </label>
+                            </div>
+                        </div>
+                        {% if form.role.errors %}
+                        <div class="text-danger small mt-1">{{ form.role.errors.0 }}</div>
+                        {% endif %}
+                    </div>
+
+                    <!-- Name fields -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-6">
+                            <label class="form-label fw-semibold text-muted small">Фамилия <span class="text-danger">*</span></label>
+                            {{ form.last_name }}
+                            {% if form.last_name.errors %}<div class="text-danger small">{{ form.last_name.errors.0 }}</div>{% endif %}
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label fw-semibold text-muted small">Имя <span class="text-danger">*</span></label>
+                            {{ form.first_name }}
+                            {% if form.first_name.errors %}<div class="text-danger small">{{ form.first_name.errors.0 }}</div>{% endif %}
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-muted small">Отчество</label>
+                        {{ form.middle_name }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-muted small">
+                            <i class="bi bi-envelope me-1"></i>Email <span class="text-danger">*</span>
+                        </label>
+                        {{ form.email }}
+                        {% if form.email.errors %}<div class="text-danger small">{{ form.email.errors.0 }}</div>{% endif %}
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-6">
+                            <label class="form-label fw-semibold text-muted small">
+                                <i class="bi bi-lock me-1"></i>Пароль <span class="text-danger">*</span>
+                            </label>
+                            {{ form.password1 }}
+                            {% if form.password1.errors %}<div class="text-danger small">{{ form.password1.errors.0 }}</div>{% endif %}
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label fw-semibold text-muted small">Подтверждение <span class="text-danger">*</span></label>
+                            {{ form.password2 }}
+                            {% if form.password2.errors %}<div class="text-danger small">{{ form.password2.errors.0 }}</div>{% endif %}
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100 py-2 fw-semibold">
+                        <i class="bi bi-person-check me-2"></i>Зарегистрироваться
+                    </button>
+                </form>
+
+                <hr class="my-3">
+                <div class="text-center">
+                    <p class="text-muted small mb-0">
+                        Уже есть аккаунт?
+                        <a href="{% url 'accounts:login' %}" class="text-success fw-semibold">Войти</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function highlightRole() {
+    const resp = document.querySelector('input[value="respondent"]').checked;
+    document.getElementById('role-respondent-label').style.borderColor = resp ? '#2d7d46' : '';
+    document.getElementById('role-respondent-label').style.background = resp ? '#f0faf4' : '';
+    document.getElementById('role-viewer-label').style.borderColor = !resp ? '#2d7d46' : '';
+    document.getElementById('role-viewer-label').style.background = !resp ? '#f0faf4' : '';
+}
+highlightRole();
+</script>
+{% endblock %}
