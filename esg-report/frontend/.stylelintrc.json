@@ -1,0 +1,32 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "responsive",
+          "screen",
+          "layer",
+          "source",
+          "import",
+          "custom-variant",
+          "theme",
+          "supports",
+          "document",
+          "media",
+          "font-face",
+          "keyframes"
+        ]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["v-deep", "v-slotted"]
+      }
+    ]
+  }
+}
