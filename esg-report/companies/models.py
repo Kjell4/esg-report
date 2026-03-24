@@ -1,5 +1,6 @@
 from django.db import models
-
+import uuid
+from django.utils import timezone as tz
 
 class OrganizationType(models.TextChoices):
     TOO = 'TOO', 'ТОО (Товарищество с ограниченной ответственностью)'

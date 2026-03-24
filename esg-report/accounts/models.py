@@ -1,6 +1,8 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
+import uuid
 from django.utils import timezone
+from django.conf import settings
 
 
 class Role(models.TextChoices):
@@ -104,3 +106,29 @@ class AuditLog(models.Model):
 
     def __str__(self):
         return f'{self.user} | {self.action} | {self.timestamp}'
+
+class PasswordResetToken(models.Model):
+    """Токен для восстановления пароля по email."""
+    user       = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE,
+        related_name='password_reset_tokens', verbose_name='Пользователь'
+    )
+    token      = models.UUIDField(default=uuid.uuid4, unique=True, verbose_name='Токен')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Создан')
+    used       = models.BooleanField(default=False, verbose_name='Использован')
+
+    EXPIRY_HOURS = 24
+
+    class Meta:
+        verbose_name = 'Токен сброса пароля'
+        verbose_name_plural = 'Токены сброса пароля'
+        ordering = ['-created_at']
+
+    def is_valid(self):
+        if self.used:
+            return False
+        expiry = self.created_at + timezone.timedelta(hours=self.EXPIRY_HOURS)
+        return timezone.now() < expiry
+
+    def __str__(self):
+        return f'{self.user.email} — {self.token}'

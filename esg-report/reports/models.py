@@ -17,6 +17,26 @@ class QuestionType(models.TextChoices):
     BOOLEAN = 'boolean', 'Да / Нет'
 
 
+class ScoreFormula(models.TextChoices):
+    """
+    Правило расчёта балла за ответ на вопрос.
+    LINEAR_DESC  — первый вариант = max, последний = 0 (по умолчанию для choice)
+    LINEAR_ASC   — первый вариант = 0, последний = max
+    BINARY       — любой ответ = max (для boolean/text: есть ответ → max)
+    PROPORTIONAL — доля выбранных вариантов * max (для multi_choice)
+    SCALE_LINEAR — (value / scale_max) * max_score (для scale)
+    NUMERIC_CAP  — min(number_value, max_score) (для number)
+    MANUAL       — балл задаётся вручную при заполнении
+    """
+    LINEAR_DESC  = 'linear_desc',  'Убывающий (лучший = первый вариант)'
+    LINEAR_ASC   = 'linear_asc',   'Возрастающий (лучший = последний вариант)'
+    BINARY       = 'binary',       'Бинарный (ответ есть → макс. балл)'
+    PROPORTIONAL = 'proportional', 'Пропорциональный (доля выбранных)'
+    SCALE_LINEAR = 'scale_linear', 'Шкала линейная (value / max_scale)'
+    NUMERIC_CAP  = 'numeric_cap',  'Числовой с потолком (min(value, max_score))'
+    MANUAL       = 'manual',       'Ручной ввод балла'
+
+
 class ReportStatus(models.TextChoices):
     DRAFT = 'draft', 'Черновик'
     SUBMITTED = 'submitted', 'Отправлен'
@@ -31,6 +51,9 @@ class Questionnaire(models.Model):
     year = models.PositiveIntegerField(verbose_name='Год')
     is_active = models.BooleanField(default=True, verbose_name='Активен')
     created_at = models.DateTimeField(auto_now_add=True)
+    weight_e = models.FloatField(default=1.0, verbose_name='Вес блока Environmental')
+    weight_s = models.FloatField(default=1.0, verbose_name='Вес блока Social')
+    weight_g = models.FloatField(default=1.0, verbose_name='Вес блока Governance')
 
     class Meta:
         verbose_name = 'Опросник'
@@ -63,6 +86,21 @@ class Question(models.Model):
     order = models.PositiveIntegerField(default=0, verbose_name='Порядок')
     is_required = models.BooleanField(default=True, verbose_name='Обязательный')
 
+    score_formula = models.CharField(
+        max_length=20,
+        choices=ScoreFormula.choices,
+        blank=True,
+        default='',
+        verbose_name='Правило расчёта балла',
+        help_text='Оставьте пустым — будет выбрано автоматически по типу вопроса'
+    )
+
+    scale_max = models.PositiveIntegerField(
+        default=5,
+        verbose_name='Максимум шкалы',
+        help_text='Только для типа «шкала»'
+    )
+
     class Meta:
         verbose_name = 'Вопрос'
         verbose_name_plural = 'Вопросы'
@@ -70,6 +108,64 @@ class Question(models.Model):
 
     def __str__(self):
         return f'[{self.category}] {self.text[:60]}'
+    
+    def get_effective_formula(self):
+        """Возвращает реально применяемое правило расчёта."""
+        if self.score_formula:
+            return self.score_formula
+        
+        defaults = {
+            QuestionType.CHOICE:       ScoreFormula.LINEAR_DESC,
+            QuestionType.MULTI_CHOICE: ScoreFormula.PROPORTIONAL,
+            QuestionType.SCALE:        ScoreFormula.SCALE_LINEAR,
+            QuestionType.NUMBER:       ScoreFormula.NUMERIC_CAP,
+            QuestionType.BOOLEAN:      ScoreFormula.BINARY,
+            QuestionType.TEXT:         ScoreFormula.BINARY,
+        }
+        return defaults.get(self.question_type, ScoreFormula.BINARY)
+
+    def calculate_answer_score(self, text_value='', number_value=None, choice_value=None):
+        formula = self.get_effective_formula()
+        max_s = self.max_score
+        options = self.options or []
+
+        if formula == ScoreFormula.SCALE_LINEAR:
+            if number_value is not None:
+                return round((float(number_value) / self.scale_max) * max_s, 2)
+
+        elif formula == ScoreFormula.LINEAR_DESC:
+            if options and text_value in options:
+                idx = options.index(text_value)
+                if len(options) == 1:
+                    return max_s
+                return round(max_s * (1 - idx / (len(options) - 1)), 2)
+
+        elif formula == ScoreFormula.LINEAR_ASC:
+            if options and text_value in options:
+                idx = options.index(text_value)
+                if len(options) == 1:
+                    return max_s
+                return round(max_s * (idx / (len(options) - 1)), 2)
+
+        elif formula == ScoreFormula.BINARY:
+            if self.question_type == QuestionType.BOOLEAN:
+                return max_s if text_value.lower() in ('yes', 'да', 'true', '1') else 0.0
+            return max_s if (text_value or '').strip() else 0.0
+
+        elif formula == ScoreFormula.PROPORTIONAL:
+            chosen = choice_value or []
+            if options and chosen:
+                return round((len(chosen) / len(options)) * max_s, 2)
+            return 0.0
+
+        elif formula == ScoreFormula.NUMERIC_CAP:
+            if number_value is not None:
+                return round(min(float(number_value), max_s), 2)
+
+        elif formula == ScoreFormula.MANUAL:
+            return None  # балл задаётся вручную
+
+        return None
 
 
 # ─── Reporting Period ─────────────────────────────────────────────────────────
@@ -135,31 +231,40 @@ class Report(models.Model):
 
     def calculate_scores(self):
         """Calculate ESG scores based on answers"""
-        answers = self.answers.select_related('question')
-        scores = {cat: {'total': 0, 'weight': 0} for cat in ['E', 'S', 'G']}
+        answers = self.answers.select_related('question').all()
+        scores = {cat: {'total': 0.0, 'max': 0.0} for cat in ['E', 'S', 'G']}
 
         for answer in answers:
-            cat = answer.question.category
+            q = answer.question
             if answer.score is not None:
-                scores[cat]['total'] += answer.score * answer.question.weight
-                scores[cat]['weight'] += answer.question.max_score * answer.question.weight
+                scores[q.category]['total'] += answer.score * q.weight
+                scores[q.category]['max']   += q.max_score * q.weight
 
+        block_scores = {}
         for cat, data in scores.items():
-            if data['weight'] > 0:
-                normalized = (data['total'] / data['weight']) * 100
+            if data['max'] > 0:
+                block_scores[cat] = round((data['total'] / data['max']) * 100, 2)
             else:
-                normalized = 0
-            if cat == 'E':
-                self.score_e = round(normalized, 2)
-            elif cat == 'S':
-                self.score_s = round(normalized, 2)
-            elif cat == 'G':
-                self.score_g = round(normalized, 2)
+                block_scores[cat] = None
 
-        e = self.score_e or 0
-        s = self.score_s or 0
-        g = self.score_g or 0
-        self.total_score = round((e + s + g) / 3, 2)
+        self.score_e = block_scores.get('E')
+        self.score_s = block_scores.get('S')
+        self.score_g = block_scores.get('G')
+
+        # Итоговый балл с весами блоков из опросника
+        q = self.questionnaire
+        weighted_sum = 0.0
+        weight_sum = 0.0
+        for cat, attr_score, attr_weight in [
+            ('E', self.score_e, q.weight_e),
+            ('S', self.score_s, q.weight_s),
+            ('G', self.score_g, q.weight_g),
+        ]:
+            if attr_score is not None:
+                weighted_sum += attr_score * attr_weight
+                weight_sum   += attr_weight
+
+        self.total_score = round(weighted_sum / weight_sum, 2) if weight_sum > 0 else None
         self.save(update_fields=['score_e', 'score_s', 'score_g', 'total_score'])
 
 

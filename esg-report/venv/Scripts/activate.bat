@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Acer\Desktop\ESG-integrated\venv
+set VIRTUAL_ENV=C:\Users\HP\Desktop\My_Projects\esg-report\esg-report\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

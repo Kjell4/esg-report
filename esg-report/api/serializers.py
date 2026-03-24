@@ -8,9 +8,6 @@ from reports.models import (
 
 User = get_user_model()
 
-
-# ─── Auth ────────────────────────────────────────────────────────────────────
-
 class UserSerializer(serializers.ModelSerializer):
     name = serializers.SerializerMethodField()
     role = serializers.SerializerMethodField()
@@ -26,7 +23,6 @@ class UserSerializer(serializers.ModelSerializer):
         return obj.get_full_name() or obj.email
 
     def get_role(self, obj):
-        # Map backend roles to frontend roles
         role_map = {'admin': 'administrator', 'respondent': 'respondent', 'viewer': 'viewer'}
         return role_map.get(obj.role, 'viewer')
 
@@ -41,7 +37,6 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class UserListSerializer(serializers.ModelSerializer):
-    """Extended serializer for admin user management list"""
     name = serializers.SerializerMethodField()
     role = serializers.SerializerMethodField()
     company = serializers.SerializerMethodField()
@@ -81,37 +76,31 @@ class RegisterSerializer(serializers.Serializer):
         return value
 
     def create(self, validated_data):
-        name_parts = validated_data['name'].split(' ', 2)
-        first_name = name_parts[0] if len(name_parts) > 0 else ''
-        last_name = name_parts[1] if len(name_parts) > 1 else ''
-        middle_name = name_parts[2] if len(name_parts) > 2 else ''
-
+        parts = validated_data['name'].split(' ', 2)
         role_map = {'administrator': 'admin', 'respondent': 'respondent', 'viewer': 'viewer'}
-        backend_role = role_map.get(validated_data['role'], 'viewer')
-
-        user = User.objects.create_user(
+        return User.objects.create_user(
             email=validated_data['email'],
             password=validated_data['password'],
-            first_name=first_name,
-            last_name=last_name,
-            middle_name=middle_name,
-            role=backend_role,
+            first_name=parts[0] if len(parts) > 0 else '',
+            last_name=parts[1]  if len(parts) > 1 else '',
+            middle_name=parts[2] if len(parts) > 2 else '',
+            role=role_map.get(validated_data['role'], 'viewer'),
         )
-        return user
 
-
-# ─── Companies ───────────────────────────────────────────────────────────────
 
 class CompanySerializer(serializers.ModelSerializer):
     activeReports = serializers.SerializerMethodField()
     avgScore = serializers.SerializerMethodField()
+    industryLabel = serializers.SerializerMethodField()
+    regionLabel = serializers.SerializerMethodField()
 
     class Meta:
         model = Company
         fields = [
-            'id', 'name', 'org_type', 'region', 'industry',
+            'id', 'name', 'org_type', 'region', 'regionLabel',
+            'industry', 'industryLabel',
             'description', 'website', 'is_active', 'created_at',
-            'activeReports', 'avgScore'
+            'activeReports', 'avgScore',
         ]
 
     def get_activeReports(self, obj):
@@ -123,6 +112,12 @@ class CompanySerializer(serializers.ModelSerializer):
             return None
         total = sum(r.total_score for r in reports)
         return round(total / reports.count(), 1)
+    
+    def get_industryLabel(self, obj):
+        return obj.get_industry_display()
+
+    def get_regionLabel(self, obj):
+        return obj.get_region_display()
 
 
 class CompanyWriteSerializer(serializers.ModelSerializer):
@@ -131,41 +126,69 @@ class CompanyWriteSerializer(serializers.ModelSerializer):
         fields = ['name', 'org_type', 'region', 'industry', 'description', 'website', 'is_active']
 
 
-# ─── Questionnaires ───────────────────────────────────────────────────────────
-
 class QuestionSerializer(serializers.ModelSerializer):
+    effectiveFormula = serializers.SerializerMethodField()
+    
     class Meta:
-        model = Question
-        fields = [
-            'id', 'category', 'text', 'question_type',
-            'options', 'max_score', 'weight', 'order', 'is_required'
-        ]
+        model  = Question
+        fields = ['id', 'category', 'text', 'question_type',
+                  'options', 'max_score', 'weight', 'order', 'is_required',
+                  'score_formula', 'scale_max', 'effectiveFormula']
+
+    def get_effectiveFormula(self, obj):
+        return obj.get_effective_formula()
 
 
 class QuestionnaireSerializer(serializers.ModelSerializer):
     questions = QuestionSerializer(many=True, read_only=True)
     questionCount = serializers.SerializerMethodField()
+    countE = serializers.SerializerMethodField()
+    countS = serializers.SerializerMethodField()
+    countG = serializers.SerializerMethodField()
 
     class Meta:
-        model = Questionnaire
-        fields = ['id', 'title', 'description', 'year', 'is_active', 'created_at', 'questions', 'questionCount']
+        model  = Questionnaire
+        fields = ['id', 'title', 'description', 'year', 'is_active', 'created_at',
+                  'weight_e', 'weight_s', 'weight_g',
+                  'questions', 'questionCount', 'countE', 'countS', 'countG']
 
     def get_questionCount(self, obj):
         return obj.questions.count()
+    
+    def get_countE(self, obj):
+        return obj.questions.filter(category='E').count()
+
+    def get_countS(self, obj):
+        return obj.questions.filter(category='S').count()
+
+    def get_countG(self, obj):
+        return obj.questions.filter(category='G').count()
 
 
 class QuestionnaireListSerializer(serializers.ModelSerializer):
     questionCount = serializers.SerializerMethodField()
+    countE = serializers.SerializerMethodField()
+    countS = serializers.SerializerMethodField()
+    countG = serializers.SerializerMethodField()
 
     class Meta:
-        model = Questionnaire
-        fields = ['id', 'title', 'description', 'year', 'is_active', 'created_at', 'questionCount']
+        model  = Questionnaire
+        fields = ['id', 'title', 'description', 'year', 'is_active', 'created_at',
+                  'weight_e', 'weight_s', 'weight_g',
+                  'questionCount', 'countE', 'countS', 'countG']
 
     def get_questionCount(self, obj):
         return obj.questions.count()
+    
+    def get_countE(self, obj):
+        return obj.questions.filter(category='E').count()
 
+    def get_countS(self, obj):
+        return obj.questions.filter(category='S').count()
 
-# ─── Reports ─────────────────────────────────────────────────────────────────
+    def get_countG(self, obj):
+        return obj.questions.filter(category='G').count()
+
 
 class ReportingPeriodSerializer(serializers.ModelSerializer):
     class Meta:
@@ -181,6 +204,10 @@ class AnswerSerializer(serializers.ModelSerializer):
 
 class ReportSerializer(serializers.ModelSerializer):
     companyName = serializers.SerializerMethodField()
+    companyIndustry = serializers.SerializerMethodField()
+    companyIndustryLabel = serializers.SerializerMethodField()
+    companyRegion = serializers.SerializerMethodField()
+    companyRegionLabel = serializers.SerializerMethodField()
     respondentName = serializers.SerializerMethodField()
     periodName = serializers.SerializerMethodField()
     questionnaireName = serializers.SerializerMethodField()
@@ -192,13 +219,28 @@ class ReportSerializer(serializers.ModelSerializer):
         model = Report
         fields = [
             'id', 'status', 'created_at', 'updated_at', 'submitted_at',
-            'company', 'companyName', 'respondent', 'respondentName',
-            'questionnaire', 'questionnaireName', 'period', 'periodName',
+            'company', 'companyName', 'companyIndustry', 'companyIndustryLabel',
+            'companyRegion', 'companyRegionLabel',
+            'respondent', 'respondentName',
+            'questionnaire', 'questionnaireName',
+            'period', 'periodName',
             'eScore', 'sScore', 'gScore', 'total_score',
         ]
 
     def get_companyName(self, obj):
         return obj.company.name if obj.company else None
+
+    def get_companyIndustry(self, obj):
+        return obj.company.industry if obj.company else None
+
+    def get_companyIndustryLabel(self, obj):
+        return obj.company.get_industry_display() if obj.company else None
+
+    def get_companyRegion(self, obj):
+        return obj.company.region if obj.company else None
+
+    def get_companyRegionLabel(self, obj):
+        return obj.company.get_region_display() if obj.company else None
 
     def get_respondentName(self, obj):
         return obj.respondent.get_full_name() if obj.respondent else None
