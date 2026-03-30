@@ -1,0 +1,6698 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "5lpdetqbhez12cznd2tqf1kk9qzl6oti",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlmO17YSSnrOEL31LiSAbCmfKuLuECkFtG9m3mZ6rMvQr7NO_SjmbII5_W6M_NSyA3mg3KvNtSzTyHZX7EFne62ir8vh_h0MmIdvnb2DEDoXhRJSatEGujFUyTdoo0bWSIETuNFEoWHpYvRCGQ4defP-APDrOBY:1w5KlE:IRODyB5mMbeVvykk_infC-NKRF_U8_EWX6w4KigbRMg",
+        "expire_date": "2026-04-08T09:42:48.755Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fr83odscn23x8ethicapq2vhqeztn8vn",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEM8ui4dN9vIAwDUjU0Ke3K-O_apAvd3nPOfYkQt7WGreclTCwuwonT70YxPXLbAd9ju80yzW1dJpK7Ig_a5Thzfl4P9--gxl6_taGcizVWUXGA5MtgNDEOBiBaqw0WD6DAEyVkNnjG4lChBptIFWTx_gDfBzeI:1w58ke:_bZPDtn9ayivatUSQv7yOBBqwEdAFemqoODlOHXKvd0",
+        "expire_date": "2026-04-07T20:53:24.786Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "u4e24h687bhifzv177salueu4rkgh2ib",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgFMSl-56BDMyMVA0kpV0Z765NutDtf-_9l4iwrSVunZY4o7gII06_W4L8oLoDvEO9NZlbXZc5yV2RB-1yakjP6-H-HRTo5VsPzFqHdB5YAweVsnXWG5fRkeUEaIwerUJLwRsDqIiSGxR7zTYQ51G8P_AvOF4:1w0Lhk:Rp9SwKLSVcdEClgQ7nwCII6ZgEoFaDKSTYPDzOiEZ_E",
+        "expire_date": "2026-03-25T15:42:36.455Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zaev7uh5w0a9usd0keaibkjvhcaiqnpj",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEwvF267zeQAUapGkhKuzL-uzbpQrf3nHNfLOK21rgNWuJc2JkpdvrdEuYHtR2UO7Zb57m3dZkT3xV-0MGnXuh5Ody_g4qjfmvpfPYWnE8ulUBCQQIdwAphCAsaBxJDAl-UkeoqpEVrldXgSBhNAdn7A7vGNq4:1w1W78:U_-VHqfWkYymr1vBarKff1HoyC6qRfHy-W4IAmssgPI",
+        "expire_date": "2026-03-28T21:01:38.266Z"
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$lcvyawL8JzW0samk842rtp$uNPbT/zmGcSnwzR9/AczZhrfPFFaPxFEtJAe4ZrhIDA=",
+        "is_superuser": true,
+        "email": "admin@kbtu.kz",
+        "first_name": "admin",
+        "last_name": "admin",
+        "middle_name": "",
+        "role": "admin",
+        "is_active": true,
+        "is_staff": true,
+        "date_joined": "2026-03-09T21:59:40.651Z",
+        "last_login": "2026-03-14T21:01:38.259Z",
+        "company": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$l5ck8AEBQAsmEN875bkzCV$Zvq3tgKn+VliPXVzvXRibWeHhB+9ulTD7pRLqXIogG0=",
+        "is_superuser": true,
+        "email": "admin@esg.com",
+        "first_name": "Admin",
+        "last_name": "User",
+        "middle_name": "",
+        "role": "admin",
+        "is_active": true,
+        "is_staff": true,
+        "date_joined": "2026-03-16T16:54:51.814Z",
+        "last_login": "2026-03-25T09:42:48.749Z",
+        "company": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$cyvEKrvl5FeLqYFTWcsfoQ$CoFZspQL1SQ2FjBK6pKJ0vJycFuZtezJAsF/dbqU/FE=",
+        "is_superuser": false,
+        "email": "respondent@company.com",
+        "first_name": "respondent",
+        "last_name": "",
+        "middle_name": "",
+        "role": "respondent",
+        "is_active": true,
+        "is_staff": false,
+        "date_joined": "2026-03-16T17:07:23.716Z",
+        "last_login": "2026-03-17T11:05:57.846Z",
+        "company": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$6R6GpQve8pLwc1VOWRTcLc$D4R+/QkvCHxbMmUFplmfNpVq9PImwLBN4b9eTLFd/IU=",
+        "is_superuser": false,
+        "email": "respotest_one@mail.ru",
+        "first_name": "Test_one",
+        "last_name": "RespoTest",
+        "middle_name": "",
+        "role": "respondent",
+        "is_active": true,
+        "is_staff": false,
+        "date_joined": "2026-03-24T20:53:24.032Z",
+        "last_login": "2026-03-24T20:53:24.761Z",
+        "company": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 1,
+    "fields": {
+        "user": null,
+        "action": "POST /accounts/register/",
+        "path": "/accounts/register/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:57:33.261Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 2,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:57:33.277Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 3,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:57:38.158Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 4,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:57:45.427Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 5,
+    "fields": {
+        "user": null,
+        "action": "POST /accounts/register/",
+        "path": "/accounts/register/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:58:25.575Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 6,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:58:25.592Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 7,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:58:29.220Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 8,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:58:33.660Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 9,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:58:40.083Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 10,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T21:58:53.408Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "POST /admin/login/",
+        "path": "/admin/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:04.600Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": "next=/admin/"
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:04.621Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/auditlog/",
+        "path": "/admin/accounts/auditlog/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:07.080Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:07.122Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/user/",
+        "path": "/admin/accounts/user/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:10.131Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:10.158Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:12.590Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:12.616Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:16.314Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": "org_type__exact=TOO"
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:16.340Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/add/",
+        "path": "/admin/companies/company/add/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:20.030Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": "_changelist_filters=org_type__exact%3DTOO"
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:20.064Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/question/",
+        "path": "/admin/reports/question/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:26.752Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:26.791Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 25,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/question/add/",
+        "path": "/admin/reports/question/add/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:28.047Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 26,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:28.077Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 27,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/reportingperiod/",
+        "path": "/admin/reports/reportingperiod/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:30.463Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 28,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:30.507Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 29,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/reportingperiod/add/",
+        "path": "/admin/reports/reportingperiod/add/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:32.030Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 30,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:32.060Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 31,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/",
+        "path": "/admin/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:36.039Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 32,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:37.743Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 33,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/user/",
+        "path": "/admin/accounts/user/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:46.807Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 34,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:46.845Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 35,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/auth/group/",
+        "path": "/admin/auth/group/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:53.402Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 36,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:53.441Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 37,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/recommendation/",
+        "path": "/admin/reports/recommendation/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:54.793Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 38,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:54.830Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 39,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/report/",
+        "path": "/admin/reports/report/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:55.790Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 40,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:00:55.828Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 41,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /",
+        "path": "/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:01:08.489Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 42,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:01:08.506Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 43,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/create/",
+        "path": "/accounts/users/create/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:01:15.321Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 44,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:01:19.386Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 45,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:01:24.224Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 46,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:01:29.249Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 47,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:01:35.709Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 48,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:01:47.065Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 49,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:02:00.576Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 50,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:02:03.296Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 51,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:02:04.537Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 52,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "POST /admin/login/",
+        "path": "/admin/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:06:35.464Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": "next=/admin/accounts/user/"
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 53,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/user/",
+        "path": "/admin/accounts/user/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:06:35.504Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 54,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:06:35.547Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 55,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:06:41.564Z",
+        "extra_data": {
+            "status_code": 403,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 56,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:06:45.854Z",
+        "extra_data": {
+            "status_code": 403,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 57,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/user/3/change/",
+        "path": "/admin/accounts/user/3/change/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:06:48.526Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 58,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:06:48.555Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 59,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/user/3/password/",
+        "path": "/admin/accounts/user/3/password/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:07.410Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 60,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "POST /admin/accounts/user/3/password/",
+        "path": "/admin/accounts/user/3/password/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:21.864Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 61,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/user/3/change/",
+        "path": "/admin/accounts/user/3/change/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:21.909Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 62,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:21.951Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 63,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:27.165Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 64,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:27.179Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 65,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:28.709Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 66,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:29.659Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 67,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:38.672Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 68,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:38.687Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 69,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:43.817Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 70,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:45.270Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 71,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/create/",
+        "path": "/accounts/users/create/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:48.915Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 72,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:50.813Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 73,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-09T22:07:55.154Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 74,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /",
+        "path": "/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:35:59.463Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 75,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:35:59.551Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 76,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:36:07.874Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 77,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:36:12.711Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 78,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/create/",
+        "path": "/accounts/users/create/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:36:19.229Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 79,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:36:21.974Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 80,
+    "fields": {
+        "user": null,
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:37:01.503Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 81,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:37:01.560Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 82,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:37:19.351Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 83,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:37:23.583Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 84,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:37:23.906Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 85,
+    "fields": {
+        "user": null,
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:37:52.534Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 86,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:37:52.584Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 87,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:38:04.671Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 88,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:38:53.903Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 89,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:38:56.512Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 90,
+    "fields": {
+        "user": null,
+        "action": "GET /",
+        "path": "/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:57:31.626Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 91,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:57:31.758Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 92,
+    "fields": {
+        "user": null,
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:58:11.722Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 93,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:58:11.771Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 94,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:58:25.296Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 95,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:58:31.632Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 96,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:58:41.208Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 97,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:58:49.711Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 98,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:58:55.632Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 99,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:59:09.565Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 100,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:59:09.649Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 101,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:59:16.553Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 102,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/create/",
+        "path": "/accounts/users/create/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:59:19.992Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 103,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:59:24.202Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 104,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/create/",
+        "path": "/accounts/users/create/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:59:51.157Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 105,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T10:59:57.258Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 106,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:00:01.658Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 107,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:00:07.518Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 108,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:00:10.704Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 109,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:00:11.634Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 110,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:00:47.233Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 111,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:00:50.213Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 112,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/create/",
+        "path": "/accounts/users/create/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:00:53.172Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 113,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /",
+        "path": "/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:17.866Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 114,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:17.927Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 115,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:22.046Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 116,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:26.193Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 117,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:26.282Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 118,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/add/",
+        "path": "/admin/companies/company/add/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:32.614Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 119,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:32.683Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 120,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:47.626Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 121,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/question/",
+        "path": "/admin/reports/question/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:50.945Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 122,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:51.029Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 123,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/question/add/",
+        "path": "/admin/reports/question/add/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:53.101Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 124,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:01:53.163Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 125,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/questionnaire/",
+        "path": "/admin/reports/questionnaire/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:02:00.605Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 126,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:02:00.669Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 127,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/questionnaire/add/",
+        "path": "/admin/reports/questionnaire/add/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:02:02.645Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 128,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:02:02.719Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 129,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/reportingperiod/",
+        "path": "/admin/reports/reportingperiod/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:02:05.781Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 130,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:02:05.847Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 131,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/report/",
+        "path": "/admin/reports/report/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:02:07.526Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 132,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-10T11:02:07.593Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 133,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /",
+        "path": "/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:39:53.264Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 134,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:39:53.407Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 135,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:15.432Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 136,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:25.437Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 137,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:25.836Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 138,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:38.460Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 139,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:48.750Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 140,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:48.822Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 141,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/add/",
+        "path": "/admin/companies/company/add/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:50.391Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 142,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:50.418Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 143,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:40:52.968Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 144,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/question/",
+        "path": "/admin/reports/question/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:09.288Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 145,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:09.316Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 146,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/questionnaire/",
+        "path": "/admin/reports/questionnaire/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:10.003Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 147,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:10.031Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 148,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/reportingperiod/",
+        "path": "/admin/reports/reportingperiod/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:10.523Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 149,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:10.551Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 150,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/report/",
+        "path": "/admin/reports/report/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:10.953Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 151,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:10.983Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 152,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/recommendation/",
+        "path": "/admin/reports/recommendation/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:11.355Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 153,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:11.386Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 154,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/user/",
+        "path": "/admin/accounts/user/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:12.354Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 155,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:12.386Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 156,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/auditlog/",
+        "path": "/admin/accounts/auditlog/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:13.408Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 157,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:13.446Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 158,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/accounts/user/",
+        "path": "/admin/accounts/user/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:29.474Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 159,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/recommendation/",
+        "path": "/admin/reports/recommendation/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:30.885Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 160,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/report/",
+        "path": "/admin/reports/report/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:31.324Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 161,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/reportingperiod/",
+        "path": "/admin/reports/reportingperiod/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:31.714Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 162,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/questionnaire/",
+        "path": "/admin/reports/questionnaire/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:32.107Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 163,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/reports/question/",
+        "path": "/admin/reports/question/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:32.407Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 164,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:32.494Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 165,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:32.760Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 166,
+    "fields": {
+        "user": null,
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:59.700Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 167,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:41:59.727Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 168,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:42:11.930Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 169,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:42:19.957Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 170,
+    "fields": {
+        "user": null,
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:42:36.453Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 171,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:42:36.476Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 172,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:42:47.372Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 173,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:44:11.607Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 174,
+    "fields": {
+        "user": null,
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:44:14.154Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 175,
+    "fields": {
+        "user": null,
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-11T15:44:15.722Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 176,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:01:38.262Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 177,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:01:38.301Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 178,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:01:48.356Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 179,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:01:49.924Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 180,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/profile/",
+        "path": "/accounts/profile/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:01:52.826Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 181,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:01:55.271Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 182,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/create/",
+        "path": "/accounts/users/create/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:01:58.891Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 183,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:00.040Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 184,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:09.700Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 185,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:11.458Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 186,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:11.512Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 187,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/add/",
+        "path": "/admin/companies/company/add/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:13.626Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 188,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/jsi18n/",
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:13.668Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 189,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/companies/company/",
+        "path": "/admin/companies/company/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:22.678Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 190,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:23.081Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 191,
+    "fields": {
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-14T21:02:24.661Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 192,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:05:23.570Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 193,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:05:23.595Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 194,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:05:23.574Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 195,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:05:23.646Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 196,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:05:28.791Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 197,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:05:28.793Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 198,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:05:38.893Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 199,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:05:38.893Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 200,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:33.541Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 201,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:33.541Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 202,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:35.043Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 203,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:35.044Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 204,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:35.394Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 205,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:35.396Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 206,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:36.356Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 207,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:36.369Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 208,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:36.394Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 209,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:36.370Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 210,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:37.907Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 211,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:37.907Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 212,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:38.889Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 213,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:38.890Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 214,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:39.715Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 215,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:39.715Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 216,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:40.250Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 217,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:40.252Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 218,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:40.531Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 219,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:40.535Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 220,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:40.536Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 221,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:40.533Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 222,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:47.147Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 223,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:47.148Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 224,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:47.360Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 225,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:47.361Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 226,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "POST /api/auth/logout/",
+        "path": "/api/auth/logout/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:06:49.619Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 227,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:24.068Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 228,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:24.070Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 229,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:24.120Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 230,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:24.119Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 231,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:25.689Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 232,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:25.691Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 233,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:25.693Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 234,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:25.728Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 235,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:25.694Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 236,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:25.693Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 237,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:26.588Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 238,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:26.589Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 239,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:27.239Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 240,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:27.242Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 241,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:27.244Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 242,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:27.267Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 243,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:27.242Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 244,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:27.342Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 245,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:46.488Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 246,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:46.489Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 247,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:47.110Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 248,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:47.133Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 249,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:47.149Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 250,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:47.110Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 251,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:48.145Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 252,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:48.159Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 253,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:48.160Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 254,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:48.159Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 255,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:48.148Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 256,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:48.161Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 257,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:52.067Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 258,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:52.070Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 259,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:52.082Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 260,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:52.082Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 261,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:53.916Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 262,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:53.922Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 263,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:53.921Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 264,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:53.920Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 265,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:53.992Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 266,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:07:53.921Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 267,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "POST /api/auth/logout/",
+        "path": "/api/auth/logout/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:03.586Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 268,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:16.051Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 269,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:16.063Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 270,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:16.080Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 271,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:16.095Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 272,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:34.738Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 273,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:34.739Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 274,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:35.476Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 275,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:35.477Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 276,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:36.762Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 277,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:36.767Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 278,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:36.828Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 279,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:36.842Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 280,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:38.333Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 281,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-16T17:08:38.334Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 282,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:02:51.534Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 283,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:02:51.567Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 284,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:02:51.567Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 285,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:02:51.596Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 286,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:02:58.971Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 287,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:02:58.987Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 288,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "DELETE /api/users/1/",
+        "path": "/api/users/1/",
+        "method": "DELETE",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:23.370Z",
+        "extra_data": {
+            "status_code": 204,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 289,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:27.559Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 290,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:27.563Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 291,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:29.131Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 292,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:29.135Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 293,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "DELETE /api/users/2/",
+        "path": "/api/users/2/",
+        "method": "DELETE",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:37.423Z",
+        "extra_data": {
+            "status_code": 204,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 294,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:39.664Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 295,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:39.668Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 296,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:41.052Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 297,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:03:41.059Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 298,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:51.131Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 299,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:51.137Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 300,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:53.172Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 301,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:53.177Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 302,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:56.679Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 303,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:56.722Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 304,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:56.755Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 305,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:56.759Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 306,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:59.391Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 307,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:04:59.397Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 308,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:04.654Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 309,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:04.662Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 310,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:04.717Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 311,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:04.743Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 312,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:42.054Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 313,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:42.060Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 314,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "POST /api/auth/logout/",
+        "path": "/api/auth/logout/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:46.630Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 315,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:57.977Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 316,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:58.026Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 317,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:58.030Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 318,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:05:57.977Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 319,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:06.139Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 320,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:06.181Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 321,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:06.157Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 322,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:06.157Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 323,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:06.196Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 324,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:06.157Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 325,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:22.254Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 326,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:22.260Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 327,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:23.808Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 328,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:23.814Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 329,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:23.814Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 330,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:23.819Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 331,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:23.864Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 332,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:23.835Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 333,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:26.970Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 334,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:27.012Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 335,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:26.984Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 336,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:27.027Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 337,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:44.576Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 338,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:44.583Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 339,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:44.581Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 340,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:44.612Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 341,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/questionnaires/",
+        "path": "/api/questionnaires/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:44.585Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 342,
+    "fields": {
+        "user": [
+            "respondent@company.com"
+        ],
+        "action": "GET /api/periods/",
+        "path": "/api/periods/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-17T11:06:44.589Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 343,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:42.730Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 344,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:42.744Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 345,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:42.735Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 346,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:42.762Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 347,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:43.968Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 348,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/users/",
+        "path": "/api/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:43.978Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 349,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:44.853Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 350,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/companies/",
+        "path": "/api/companies/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:44.862Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 351,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:46.193Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 352,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:46.204Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 353,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:46.995Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 354,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:47.005Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 355,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/reports/",
+        "path": "/api/reports/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:47.016Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 356,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /api/dashboard/stats/",
+        "path": "/api/dashboard/stats/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-23T14:59:47.047Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 357,
+    "fields": {
+        "user": [
+            "respotest_one@mail.ru"
+        ],
+        "action": "POST /accounts/register/",
+        "path": "/accounts/register/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-24T20:53:24.774Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 358,
+    "fields": {
+        "user": [
+            "respotest_one@mail.ru"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-24T20:53:24.820Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 359,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "POST /accounts/login/",
+        "path": "/accounts/login/",
+        "method": "POST",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T09:42:48.752Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": "next=/dashboard/"
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 360,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T09:42:48.813Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 361,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T09:42:51.715Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 362,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T09:42:58.597Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 363,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T09:43:01.583Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 364,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T09:43:04.689Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 365,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /admin/",
+        "path": "/admin/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T09:43:08.324Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 366,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /",
+        "path": "/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T12:11:17.150Z",
+        "extra_data": {
+            "status_code": 302,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 367,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /dashboard/",
+        "path": "/dashboard/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T12:11:17.202Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "accounts.auditlog",
+    "pk": 368,
+    "fields": {
+        "user": [
+            "admin@esg.com"
+        ],
+        "action": "GET /accounts/users/",
+        "path": "/accounts/users/",
+        "method": "GET",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2026-03-25T12:11:18.961Z",
+        "extra_data": {
+            "status_code": 200,
+            "query_string": ""
+        }
+    }
+},
+{
+    "model": "reports.reportingperiod",
+    "pk": 1,
+    "fields": {
+        "name": "Q1 2026",
+        "year": 2026,
+        "quarter": 1,
+        "start_date": "2026-01-01",
+        "end_date": "2026-03-31",
+        "is_active": true
+    }
+},
+{
+    "model": "reports.reportingperiod",
+    "pk": 2,
+    "fields": {
+        "name": "Q4 2025",
+        "year": 2025,
+        "quarter": 4,
+        "start_date": "2025-10-01",
+        "end_date": "2025-12-31",
+        "is_active": true
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-03-09T22:07:21.853Z",
+        "user": [
+            "admin@kbtu.kz"
+        ],
+        "content_type": [
+            "accounts",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "admin admin (admin@kbtu.kz)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+}
+]
