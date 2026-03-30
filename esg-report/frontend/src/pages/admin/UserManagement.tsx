@@ -28,7 +28,7 @@ export function UserManagement() {
   };
 
   const handleDelete = async (id: number) => {
-    if (!window.confirm('Delete this user?')) return;
+    if (!window.confirm('Удалить пользователя?')) return;
     try {
       await usersApi.delete(id);
       setUsers(prev => prev.filter(u => u.id !== id));
@@ -60,8 +60,8 @@ export function UserManagement() {
     <div className="p-8 max-w-7xl mx-auto">
       <div className="mb-8 flex items-center justify-between">
   <div>
-    <h1 className="text-3xl font-bold text-gray-900 mb-2">User Management</h1>
-    <p className="text-gray-600">Manage user accounts, roles, and permissions</p>
+    <h1 className="text-3xl font-bold text-gray-900 mb-2">Управление пользователями</h1>
+    <p className="text-gray-600">Управление учетными записями пользователей, ролями и доступами</p>
   </div>
 
   <button
@@ -79,7 +79,7 @@ export function UserManagement() {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
             <input
               type="text"
-              placeholder="Search users..."
+              placeholder="Поиск пользователя..."
               value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
               className="w-full pl-11 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -90,16 +90,16 @@ export function UserManagement() {
             onChange={e => setFilterRole(e.target.value)}
             className="px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
-            <option value="all">All Roles</option>
-            <option value="administrator">Administrator</option>
-            <option value="respondent">Respondent</option>
-            <option value="viewer">Viewer</option>
+            <option value="all">Все роли</option>
+            <option value="administrator">Администратор</option>
+            <option value="respondent">Респондент</option>
+            <option value="viewer">Пользователь</option>
           </select>
         </div>
       </div>
 
       {loading ? (
-        <div className="text-center py-12 text-gray-400">Loading users...</div>
+        <div className="text-center py-12 text-gray-400">Загрузка пользователей...</div>
       ) : error ? (
         <div className="text-center py-12 text-red-500">{error}</div>
       ) : (
@@ -107,12 +107,12 @@ export function UserManagement() {
           <table className="w-full text-sm">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">User</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Role</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Company</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Last Login</th>
-                <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Actions</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Пользователь</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Роль</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Компания</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Статус</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Последний вход</th>
+                <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Действия</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
@@ -160,7 +160,7 @@ export function UserManagement() {
               })}
               {filtered.length === 0 && (
                 <tr>
-                  <td colSpan={6} className="px-6 py-12 text-center text-gray-400">No users found.</td>
+                  <td colSpan={6} className="px-6 py-12 text-center text-gray-400">Пользователи не найдены.</td>
                 </tr>
               )}
             </tbody>

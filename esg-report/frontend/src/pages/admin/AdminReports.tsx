@@ -31,37 +31,37 @@ export function AdminReports() {
   return (
     <div className="p-8 max-w-7xl mx-auto">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">All Reports</h1>
-        <p className="text-gray-600">Review and manage ESG reports from all companies</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Все отчеты</h1>
+        <p className="text-gray-600">Просматривайте отчеты ESG от всех компаний и управляйте ими</p>
       </div>
 
       <div className="bg-white rounded-xl border border-gray-200 p-4 mb-6 flex flex-col lg:flex-row gap-4">
         <div className="flex-1 relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-          <input type="text" placeholder="Search by company or respondent..." value={search}
+          <input type="text" placeholder="Поиск по компании или респонденту..." value={search}
             onChange={e => setSearch(e.target.value)}
             className="w-full pl-11 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm" />
         </div>
         <select value={filterStatus} onChange={e => setFilterStatus(e.target.value)}
           className="px-4 py-2.5 border border-gray-200 rounded-lg text-sm">
-          <option value="all">All Statuses</option>
-          <option value="draft">Draft</option>
-          <option value="submitted">Submitted</option>
-          <option value="reviewed">Reviewed</option>
+          <option value="all">Все статусы</option>
+          <option value="draft">Черновик</option>
+          <option value="submitted">Отправлен</option>
+          <option value="reviewed">Просмотрен</option>
         </select>
       </div>
 
       {loading ? (
-        <div className="text-center py-12 text-gray-400">Loading reports...</div>
+        <div className="text-center py-12 text-gray-400">Загрузка отчетов...</div>
       ) : (
         <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Company</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Respondent</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Period</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Компания</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Респондент</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Период</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Статус</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">E / S / G</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Total</th>
               </tr>
@@ -91,7 +91,7 @@ export function AdminReports() {
               })}
               {filtered.length === 0 && (
                 <tr>
-                  <td colSpan={6} className="px-6 py-12 text-center text-gray-400">No reports found.</td>
+                  <td colSpan={6} className="px-6 py-12 text-center text-gray-400">Отчеты не найдены.</td>
                 </tr>
               )}
             </tbody>

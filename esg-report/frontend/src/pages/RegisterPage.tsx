@@ -27,7 +27,7 @@ export function RegisterPage() {
         : '/viewer/dashboard';
       navigate(route);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Registration failed');
+      setError(err instanceof Error ? err.message : 'Не удалось выполнить регистрацию');
     } finally {
       setLoading(false);
     }
@@ -42,12 +42,12 @@ export function RegisterPage() {
             <BarChart3 className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">ESG Platform</h1>
-          <p className="text-gray-600">Create Your Account</p>
+          <p className="text-gray-600">Создайте свою учетную запись</p>
         </div>
 
         {/* Register form */}
         <div className="bg-white rounded-2xl shadow-xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Register</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Регитсрация</h2>
 
           {error && (
             <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
@@ -59,7 +59,7 @@ export function RegisterPage() {
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Full Name
+                Имя и фамилия
               </label>
               <div className="relative">
                 <UserIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -76,7 +76,7 @@ export function RegisterPage() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email Address
+                Email Адрес
               </label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -93,7 +93,7 @@ export function RegisterPage() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Password
+                Пароль
               </label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -111,21 +111,21 @@ export function RegisterPage() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Role
+                Роль
               </label>
               <select
                 value={role}
                 onChange={(e) => setRole(e.target.value as UserRole)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-                <option value="respondent">Respondent</option>
-                <option value="viewer">Viewer</option>
-                <option value="administrator">Administrator</option>
+                <option value="respondent">Респондент</option>
+                <option value="viewer">Пользователь</option>
+                <option value="administrator">Администратор</option>
               </select>
               <p className="mt-2 text-xs text-gray-500">
-                {role === 'respondent' && 'Create and submit ESG reports'}
-                {role === 'viewer' && 'View reports and analytics (read-only)'}
-                {role === 'administrator' && 'Full platform access and management'}
+                {role === 'respondent' && 'Создание и отправка отчетов ESG'}
+                {role === 'viewer' && 'Просмотр отчетов и аналитики (только для просмотра)'}
+                {role === 'administrator' && 'Полный доступ к платформе и управление ею'}
               </p>
             </div>
 
@@ -134,22 +134,22 @@ export function RegisterPage() {
               disabled={loading}
               className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? 'Creating account...' : 'Create Account'}
+              {loading ? 'Создание аккаунта...' : 'Создать аккаунт'}
             </button>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
-              Already have an account?{' '}
+              Уже есть аккаунт?{' '}
               <Link to="/login" className="text-blue-600 font-medium hover:text-blue-700">
-                Sign In
+                Войти
               </Link>
             </p>
           </div>
         </div>
 
         <p className="text-center text-xs text-gray-500 mt-6">
-          By registering, you agree to our Terms of Service and Privacy Policy
+          Регистрируясь, вы соглашаетесь с нашими Условиями предоставления услуг и Политикой конфиденциальности
         </p>
       </div>
     </div>

@@ -32,33 +32,33 @@ export function AdminDashboard() {
   return (
     <div className="p-8 max-w-7xl mx-auto">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Administrator Dashboard</h1>
-        <p className="text-gray-600">Welcome back, {user?.name}. Here's your platform overview.</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Дэшборд Администратора</h1>
+        <p className="text-gray-600">С возвращением, {user?.name}. Здесь обзор вашей платформы.</p>
       </div>
 
       {loading ? (
-        <div className="text-center py-12 text-gray-400">Loading...</div>
+        <div className="text-center py-12 text-gray-400">Загрузка...</div>
       ) : (
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <StatCard title="Total Users" value={String(stats.totalUsers ?? '—')} icon={Users} color="blue" />
-            <StatCard title="Active Companies" value={String(stats.totalCompanies ?? '—')} icon={Building2} color="green" />
-            <StatCard title="Total Reports" value={String(stats.totalReports ?? '—')} icon={FileText} color="orange" />
-            <StatCard title="Avg ESG Score" value={stats.avgEsgScore != null ? String(stats.avgEsgScore) : '—'} icon={TrendingUp} color="gray" />
+            <StatCard title="Общее количество пользователей" value={String(stats.totalUsers ?? '—')} icon={Users} color="blue" />
+            <StatCard title="Действующие компании" value={String(stats.totalCompanies ?? '—')} icon={Building2} color="green" />
+            <StatCard title="Общее количество отчетов" value={String(stats.totalReports ?? '—')} icon={FileText} color="orange" />
+            <StatCard title="Средний ESG Score" value={stats.avgEsgScore != null ? String(stats.avgEsgScore) : '—'} icon={TrendingUp} color="gray" />
           </div>
 
           <div className="bg-white rounded-xl border border-gray-200 p-6 mb-8">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Recent Reports</h2>
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Последние отчеты</h2>
             {recentReports.length === 0 ? (
-              <p className="text-gray-400 text-sm">No reports yet.</p>
+              <p className="text-gray-400 text-sm">Отчетов пока нет.</p>
             ) : (
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="text-left text-gray-500 border-b border-gray-100">
-                      <th className="pb-3 font-medium">Company</th>
-                      <th className="pb-3 font-medium">Period</th>
-                      <th className="pb-3 font-medium">Status</th>
+                      <th className="pb-3 font-medium">Компания</th>
+                      <th className="pb-3 font-medium">Период</th>
+                      <th className="pb-3 font-medium">Статус</th>
                       <th className="pb-3 font-medium">Score</th>
                     </tr>
                   </thead>

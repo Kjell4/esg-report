@@ -4,14 +4,14 @@ import { questionnairesApi, companiesApi, periodsApi, reportsApi, ApiQuestionnai
 import { useAuth } from '../../contexts/AuthContext';
 import { ChevronRight, ChevronLeft, CheckCircle } from 'lucide-react';
 
-type Step = 'setup' | 'questions' | 'review';
+type Step = 'настройка' | 'вопросы' | 'проверка';
 
 export function ReportWizard() {
   const { reportId } = useParams<{ reportId?: string }>();
   const navigate = useNavigate();
   const { user } = useAuth();
 
-  const [step, setStep] = useState<Step>('setup');
+  const [step, setStep] = useState<Step>('настройка');
   const [questionnaires, setQuestionnaires] = useState<ApiQuestionnaire[]>([]);
   const [companies, setCompanies] = useState<ApiCompany[]>([]);
   const [periods, setPeriods] = useState<ApiPeriod[]>([]);
@@ -56,14 +56,14 @@ export function ReportWizard() {
         const map: Record<number, ApiAnswer> = {};
         existingAnswers.forEach(a => { map[a.question] = a; });
         setAnswers(map);
-        setStep('questions');
+        setStep('вопросы');
       }).catch(e => setError(e.message));
     }
   }, [reportId, user]);
 
   const handleSetupNext = async () => {
     if (!selectedQ || !selectedCompany || !selectedPeriod) {
-      setError('Please select all fields.');
+      setError('Пожалуйста, выберите все поля.');
       return;
     }
     setError('');
@@ -79,7 +79,7 @@ export function ReportWizard() {
         });
         setReport(r);
       }
-      setStep('questions');
+      setStep('вопросы');
     } catch (e: any) {
       setError(e.message);
     } finally {
@@ -100,7 +100,7 @@ export function ReportWizard() {
     try {
       const payload = Object.values(answers);
       await reportsApi.saveAnswers(report.id, payload);
-      setStep('review');
+      setStep('проверка');
     } catch (e: any) {
       setError(e.message);
     } finally {
@@ -120,14 +120,14 @@ export function ReportWizard() {
     }
   };
 
-  if (loading) return <div className="p-8 text-center text-gray-400">Loading...</div>;
+  if (loading) return <div className="p-8 text-center text-gray-400">Загрузка...</div>;
 
   return (
     <div className="p-8 max-w-3xl mx-auto">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">{reportId ? 'Edit Report' : 'New ESG Report'}</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">{reportId ? 'Редактировать отчет' : 'Новый ESG Отчет'}</h1>
         <div className="flex items-center gap-2 text-sm">
-          {(['setup', 'questions', 'review'] as Step[]).map((s, i) => (
+          {(['настройка', 'вопросы', 'проверка'] as Step[]).map((s, i) => (
             <React.Fragment key={s}>
               <span className={`font-medium ${step === s ? 'text-blue-600' : step > s ? 'text-green-600' : 'text-gray-400'}`}>
                 {i + 1}. {s.charAt(0).toUpperCase() + s.slice(1)}
@@ -140,40 +140,40 @@ export function ReportWizard() {
 
       {error && <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">{error}</div>}
 
-      {step === 'setup' && (
+      {step === 'настройка' && (
         <div className="bg-white rounded-xl border border-gray-200 p-6 space-y-5">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Questionnaire</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Опросник</label>
             <select value={selectedQ} onChange={e => setSelectedQ(Number(e.target.value))}
               className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm">
-              <option value="">Select questionnaire...</option>
+              <option value="">Выбрать опросник...</option>
               {questionnaires.map(q => <option key={q.id} value={q.id}>{q.title} ({q.year})</option>)}
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Company</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Компания</label>
             <select value={selectedCompany} onChange={e => setSelectedCompany(Number(e.target.value))}
               className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm">
-              <option value="">Select company...</option>
+              <option value="">Выбрать компанию...</option>
               {companies.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Reporting Period</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Период отчета</label>
             <select value={selectedPeriod} onChange={e => setSelectedPeriod(Number(e.target.value))}
               className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm">
-              <option value="">Select period...</option>
+              <option value="">Выбрать период...</option>
               {periods.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}
             </select>
           </div>
           <button onClick={handleSetupNext} disabled={saving}
             className="w-full flex items-center justify-center gap-2 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 font-medium">
-            {saving ? 'Creating...' : 'Next'} <ChevronRight className="w-4 h-4" />
+            {saving ? 'Создание...' : 'Продолжить'} <ChevronRight className="w-4 h-4" />
           </button>
         </div>
       )}
 
-      {step === 'questions' && questionnaire && (
+      {step === 'вопросы' && questionnaire && (
         <div className="space-y-6">
           {['E', 'S', 'G'].map(cat => {
             const catQuestions = questionnaire.questions?.filter(q => q.category === cat) ?? [];
@@ -193,7 +193,7 @@ export function ReportWizard() {
                           onChange={e => handleAnswerChange(q.id, 'text_value', e.target.value)}
                           className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm resize-none" />
                       )}
-                      {q.question_type === 'number' && (
+                      {(q.question_type === 'number' || q.question_type === 'numeric') && (
                         <input type="number" value={answers[q.id]?.number_value ?? ''}
                           onChange={e => handleAnswerChange(q.id, 'number_value', parseFloat(e.target.value))}
                           className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm" />
@@ -224,9 +224,10 @@ export function ReportWizard() {
                           ))}
                         </div>
                       )}
-                      {q.question_type === 'choice' && (
+                      {/* single_choice — один вариант (radio) */}
+                      {(q.question_type === 'choice' || q.question_type === 'single_choice') && (
                         <div className="space-y-2">
-                          {q.options.map(opt => (
+                          {(q.options ?? []).map(opt => (
                             <label key={opt} className="flex items-center gap-2 text-sm cursor-pointer">
                               <input type="radio" name={`q-${q.id}`} value={opt}
                                 checked={answers[q.id]?.text_value === opt}
@@ -234,6 +235,30 @@ export function ReportWizard() {
                               {opt}
                             </label>
                           ))}
+                        </div>
+                      )}
+                      {/* multi_choice — несколько вариантов (checkbox) */}
+                      {q.question_type === 'multi_choice' && (
+                        <div className="space-y-2">
+                          {(q.options ?? []).map(opt => {
+                            const selected: string[] = answers[q.id]?.choice_value ?? [];
+                            const checked = selected.includes(opt);
+                            return (
+                              <label key={opt} className="flex items-center gap-2 text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  checked={checked}
+                                  onChange={() => {
+                                    const next = checked
+                                      ? selected.filter(v => v !== opt)
+                                      : [...selected, opt];
+                                    handleAnswerChange(q.id, 'choice_value', next);
+                                  }}
+                                />
+                                {opt}
+                              </label>
+                            );
+                          })}
                         </div>
                       )}
                     </div>
@@ -244,34 +269,34 @@ export function ReportWizard() {
           })}
 
           <div className="flex gap-3">
-            <button onClick={() => setStep('setup')}
+            <button onClick={() => setStep('настройка')}
               className="flex items-center gap-2 px-6 py-3 border border-gray-200 rounded-lg text-sm hover:bg-gray-50">
-              <ChevronLeft className="w-4 h-4" /> Back
+              <ChevronLeft className="w-4 h-4" /> Назад
             </button>
             <button onClick={handleSaveAnswers} disabled={saving}
               className="flex-1 flex items-center justify-center gap-2 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 font-medium">
-              {saving ? 'Saving...' : 'Save & Review'} <ChevronRight className="w-4 h-4" />
+              {saving ? 'Сохранение...' : 'Сохранить и проверить'} <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         </div>
       )}
 
-      {step === 'review' && (
+      {step === 'проверка' && (
         <div className="bg-white rounded-xl border border-gray-200 p-8 text-center">
           <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Ready to Submit</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Готов к отправке</h2>
           <p className="text-gray-600 mb-6">
-            Your answers have been saved. Submit the report when you're ready.
-            Once submitted, it cannot be edited.
+            Ваши ответы были сохранены. Отправьте отчет, когда будете готовы.
+            После отправки его нельзя будет редактировать.
           </p>
           <div className="flex gap-3">
-            <button onClick={() => setStep('questions')}
+            <button onClick={() => setStep('вопросы')}
               className="flex-1 px-6 py-3 border border-gray-200 rounded-lg text-sm hover:bg-gray-50">
-              Back to Questions
+              Назад к вопросам
             </button>
             <button onClick={handleSubmit} disabled={submitting}
               className="flex-1 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 font-medium">
-              {submitting ? 'Submitting...' : 'Submit Report'}
+              {submitting ? 'Отправка...' : 'Отправить отчет'}
             </button>
           </div>
         </div>

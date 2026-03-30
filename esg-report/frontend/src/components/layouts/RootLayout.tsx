@@ -27,23 +27,23 @@ export function RootLayout() {
     switch (user?.role) {
       case 'administrator':
         return [
-          { path: '/admin/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-          { path: '/admin/users', icon: Users, label: 'User Management' },
-          { path: '/admin/companies', icon: Building2, label: 'Companies' },
-          { path: '/admin/questionnaires', icon: ClipboardList, label: 'Questionnaires' },
-          { path: '/admin/reports', icon: FileText, label: 'All Reports' },
+          { path: '/admin/dashboard', icon: LayoutDashboard, label: 'Дэшборд' },
+          { path: '/admin/users', icon: Users, label: 'Управление пользователями' },
+          { path: '/admin/companies', icon: Building2, label: 'Компаний' },
+          { path: '/admin/questionnaires', icon: ClipboardList, label: 'Опросники' },
+          { path: '/admin/reports', icon: FileText, label: 'Все отчеты' },
         ];
       case 'respondent':
         return [
-          { path: '/respondent/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-          { path: '/respondent/report/new', icon: ClipboardList, label: 'New Report' },
-          { path: '/respondent/reports', icon: FileText, label: 'My Reports' },
+          { path: '/respondent/dashboard', icon: LayoutDashboard, label: 'Дэшборд' },
+          { path: '/respondent/report/new', icon: ClipboardList, label: 'Новый отчет' },
+          { path: '/respondent/reports', icon: FileText, label: 'Мои отчеты' },
         ];
       case 'viewer':
         return [
-          { path: '/viewer/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-          { path: '/viewer/reports', icon: FileText, label: 'Reports' },
-          { path: '/viewer/analytics', icon: BarChart3, label: 'Analytics' },
+          { path: '/viewer/dashboard', icon: LayoutDashboard, label: 'Дэшборд' },
+          { path: '/viewer/reports', icon: FileText, label: 'Отчеты' },
+          { path: '/viewer/analytics', icon: BarChart3, label: 'Аналитика' },
         ];
       default:
         return [];
@@ -119,7 +119,7 @@ export function RootLayout() {
             className="w-full flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
           >
             <LogOut className="w-5 h-5" />
-            <span className="font-medium">Logout</span>
+            <span className="font-medium">Выйти</span>
           </button>
         </div>
       </aside>

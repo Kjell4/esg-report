@@ -301,8 +301,8 @@ export function QuestionnaireBuilder() {
 
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Questionnaire Builder</h1>
-        <p className="text-gray-600">Create and manage ESG assessment questionnaires</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Конструктор Опросника</h1>
+        <p className="text-gray-600">Создание опросников для оценки ESG и управление ими</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -310,7 +310,7 @@ export function QuestionnaireBuilder() {
         <div className="lg:col-span-1">
           <div className="bg-white rounded-xl border border-gray-200 p-4">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="font-semibold text-gray-900">Questionnaires</h2>
+              <h2 className="font-semibold text-gray-900">Опросники</h2>
               <button
                 onClick={startNew}
                 className="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -322,10 +322,10 @@ export function QuestionnaireBuilder() {
 
             {loadingList ? (
               <div className="flex items-center justify-center py-8 text-gray-400">
-                <Loader2 className="w-5 h-5 animate-spin mr-2" /> Loading...
+                <Loader2 className="w-5 h-5 animate-spin mr-2" /> Загрузка...
               </div>
             ) : questionnaires.length === 0 ? (
-              <p className="text-sm text-gray-400 text-center py-6">No questionnaires yet</p>
+              <p className="text-sm text-gray-400 text-center py-6">Опросников пока нет.</p>
             ) : (
               <div className="space-y-2">
                 {questionnaires.map((q) => (
@@ -415,13 +415,13 @@ export function QuestionnaireBuilder() {
                           className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:opacity-50"
                         >
                           {saving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
-                          {saving ? 'Saving...' : 'Save'}
+                          {saving ? 'Сохранение...' : 'Сохранить'}
                         </button>
                         <button
                           onClick={cancelEdit}
                           className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors"
                         >
-                          Cancel
+                          Отмена
                         </button>
                       </>
                     ) : (
@@ -431,7 +431,7 @@ export function QuestionnaireBuilder() {
                           className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                         >
                           <Edit className="w-4 h-4" />
-                          Edit
+                          Изменить
                         </button>
                         <button
                           onClick={() => setShowWeights(!showWeights)}
@@ -443,7 +443,7 @@ export function QuestionnaireBuilder() {
                           }`}
                         >
                           <Settings2 className="w-4 h-4" />
-                          Weights
+                          Весы
                         </button>
                       </>
                     )}

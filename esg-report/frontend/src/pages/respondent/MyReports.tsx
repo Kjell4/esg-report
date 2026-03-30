@@ -25,22 +25,22 @@ export function MyReports() {
     <div className="p-8 max-w-7xl mx-auto">
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">My Reports</h1>
-          <p className="text-gray-600">Track and manage your ESG submissions</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Мои отчеты</h1>
+          <p className="text-gray-600">Отслеживайте свои материалы ESG и управляйте ими</p>
         </div>
         <button onClick={() => navigate('/respondent/report/new')}
           className="flex items-center gap-2 px-4 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium">
-          + New Report
+          + Новый отчет
         </button>
       </div>
 
       {loading ? (
-        <div className="text-center py-12 text-gray-400">Loading...</div>
+        <div className="text-center py-12 text-gray-400">Загрузка...</div>
       ) : reports.length === 0 ? (
         <div className="text-center py-16 text-gray-400">
           <FileText className="w-16 h-16 mx-auto mb-4 opacity-20" />
-          <p className="text-lg mb-2">No reports yet</p>
-          <p className="text-sm">Create your first ESG report to get started.</p>
+          <p className="text-lg mb-2">Отчетов пока нет</p>
+          <p className="text-sm">Для начала создайте свой первый ESG-отчет.</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -74,7 +74,7 @@ export function MyReports() {
                 {r.status === 'draft' && (
                   <button onClick={() => navigate(`/respondent/report/${r.id}/edit`)}
                     className="w-full flex items-center justify-center gap-2 px-4 py-2 border border-blue-200 text-blue-600 rounded-lg text-sm hover:bg-blue-50">
-                    <Edit className="w-4 h-4" /> Continue Editing
+                    <Edit className="w-4 h-4" /> Продолжить изменения
                   </button>
                 )}
               </div>

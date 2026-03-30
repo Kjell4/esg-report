@@ -30,7 +30,7 @@ export function LoginPage() {
     try {
       await login(email, password);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Login failed');
+      setError(err instanceof Error ? err.message : 'Ошибка входа');
     } finally {
       setLoading(false);
     }
@@ -45,12 +45,12 @@ export function LoginPage() {
             <BarChart3 className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">ESG Platform</h1>
-          <p className="text-gray-600">Secure Enterprise Reporting & Analytics</p>
+          <p className="text-gray-600">Безопасная корпоративная отчетность и аналитика</p>
         </div>
 
         {/* Login form */}
         <div className="bg-white rounded-2xl shadow-xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Sign In</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Вход</h2>
 
           {error && (
             <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
@@ -62,7 +62,7 @@ export function LoginPage() {
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email Address
+                Email Адрес
               </label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -81,13 +81,13 @@ export function LoginPage() {
               {/* 4.1: ссылка «Забыли пароль?» рядом с лейблом */}
               <div className="flex items-center justify-between mb-2">
                 <label className="block text-sm font-medium text-gray-700">
-                  Password
+                  Пароль
                 </label>
                 <Link
                   to="/forgot-password"
                   className="text-sm text-blue-600 hover:text-blue-700 font-medium"
                 >
-                  Forgot password?
+                  Забыли пароль?
                 </Link>
               </div>
               <div className="relative">
@@ -108,15 +108,15 @@ export function LoginPage() {
               disabled={loading}
               className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? 'Signing in...' : 'Sign In'}
+              {loading ? 'Вход в систему...' : 'Вход'}
             </button>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
-              Don't have an account?{' '}
+              Нет аккаунта?{' '}
               <Link to="/register" className="text-blue-600 font-medium hover:text-blue-700">
-                Register
+                Регистрация
               </Link>
             </p>
           </div>
@@ -142,7 +142,7 @@ export function LoginPage() {
         </div>
 
         <p className="text-center text-xs text-gray-500 mt-6">
-          Secure authentication • All actions logged • Enterprise-grade security
+          Безопасная аутентификация • Все действия регистрируются в журнале • Безопасность корпоративного уровня
         </p>
       </div>
     </div>

@@ -34,7 +34,7 @@ export function CompanyManagement() {
   };
 
   const handleDelete = async (id: number) => {
-    if (!window.confirm('Delete this company?')) return;
+    if (!window.confirm('Удалить эту компанию?')) return;
     try {
       await companiesApi.delete(id);
       setCompanies(prev => prev.filter(c => c.id !== id));
@@ -52,23 +52,23 @@ export function CompanyManagement() {
     <div className="p-8 max-w-7xl mx-auto">
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Company Management</h1>
-          <p className="text-gray-600">Manage registered companies and their ESG data</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Управление Компаниями</h1>
+          <p className="text-gray-600">Управлять зарегистрированными компаниями и их данными ESG</p>
         </div>
         <button
           onClick={() => setShowForm(true)}
           className="flex items-center gap-2 px-4 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium"
         >
-          <Plus className="w-4 h-4" /> Add Company
+          <Plus className="w-4 h-4" /> Добавить Компанию
         </button>
       </div>
 
       {showForm && (
         <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl p-6 w-full max-w-lg shadow-2xl">
-            <h2 className="text-xl font-bold mb-4">New Company</h2>
+            <h2 className="text-xl font-bold mb-4">Новая Компания</h2>
             <form onSubmit={handleCreate} className="space-y-4">
-              <input required placeholder="Company name" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
+              <input required placeholder="Название компании" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
                 className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm" />
               <select value={form.org_type} onChange={e => setForm(f => ({ ...f, org_type: e.target.value }))}
                 className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm">
@@ -113,14 +113,14 @@ export function CompanyManagement() {
                 <option value="metallurgy">Металлургия</option>
                 <option value="other">Иное</option>
               </select>
-              <input placeholder="Website (optional)" value={form.website} onChange={e => setForm(f => ({ ...f, website: e.target.value }))}
+              <input placeholder="Веб-сайт (необязательно)" value={form.website} onChange={e => setForm(f => ({ ...f, website: e.target.value }))}
                 className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm" />
               <div className="flex gap-3 pt-2">
                 <button type="button" onClick={() => setShowForm(false)}
-                  className="flex-1 px-4 py-2.5 border border-gray-200 rounded-lg text-sm hover:bg-gray-50">Cancel</button>
+                  className="flex-1 px-4 py-2.5 border border-gray-200 rounded-lg text-sm hover:bg-gray-50">Отмена</button>
                 <button type="submit" disabled={saving}
                   className="flex-1 px-4 py-2.5 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 disabled:opacity-50">
-                  {saving ? 'Saving...' : 'Create'}
+                  {saving ? 'Сохранение...' : 'Добавить'}
                 </button>
               </div>
             </form>
@@ -131,14 +131,14 @@ export function CompanyManagement() {
       <div className="bg-white rounded-xl border border-gray-200 p-4 mb-6">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-          <input type="text" placeholder="Search companies..." value={searchTerm}
+          <input type="text" placeholder="Поиск компаний..." value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
             className="w-full pl-11 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm" />
         </div>
       </div>
 
       {loading ? (
-        <div className="text-center py-12 text-gray-400">Loading...</div>
+        <div className="text-center py-12 text-gray-400">Загрузка...</div>
       ) : error ? (
         <div className="text-center py-12 text-red-500">{error}</div>
       ) : (
@@ -160,7 +160,7 @@ export function CompanyManagement() {
                 <div className="flex items-center gap-1.5"><Briefcase className="w-3.5 h-3.5" />{c.industry}</div>
               </div>
               <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between text-xs">
-                <span className="text-gray-500">{c.activeReports} reports</span>
+                <span className="text-gray-500">{c.activeReports} отчеты</span>
                 <span className={`font-semibold ${c.avgScore != null ? 'text-green-600' : 'text-gray-400'}`}>
                   {c.avgScore != null ? `Score: ${c.avgScore}` : 'No score'}
                 </span>
@@ -168,7 +168,7 @@ export function CompanyManagement() {
             </div>
           ))}
           {filtered.length === 0 && (
-            <div className="col-span-3 text-center py-12 text-gray-400">No companies found.</div>
+            <div className="col-span-3 text-center py-12 text-gray-400">Компаний не найдены.</div>
           )}
         </div>
       )}
