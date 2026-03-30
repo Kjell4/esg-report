@@ -2,6 +2,9 @@ import { createBrowserRouter, Navigate } from 'react-router';
 import { RootLayout } from './components/layouts/RootLayout';
 import { LoginPage } from './pages/LoginPage';
 import { RegisterPage } from './pages/RegisterPage';
+// 4.1 Восстановление пароля по email
+import { ForgotPasswordPage } from './pages/ForgotPasswordPage';
+import { ResetPasswordPage } from './pages/ResetPasswordPage';
 import { AdminDashboard } from './pages/admin/AdminDashboard';
 import { UserManagement } from './pages/admin/UserManagement';
 import { CompanyManagement } from './pages/admin/CompanyManagement';
@@ -22,6 +25,15 @@ export const router = createBrowserRouter([
   {
     path: '/register',
     Component: RegisterPage,
+  },
+  // 4.1: Страницы восстановления пароля (без авторизации)
+  {
+    path: '/forgot-password',
+    Component: ForgotPasswordPage,
+  },
+  {
+    path: '/reset-password',
+    Component: ResetPasswordPage,
   },
   {
     path: '/',

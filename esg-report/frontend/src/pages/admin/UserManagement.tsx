@@ -58,10 +58,20 @@ export function UserManagement() {
 
   return (
     <div className="p-8 max-w-7xl mx-auto">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">User Management</h1>
-        <p className="text-gray-600">Manage user accounts, roles, and permissions</p>
-      </div>
+      <div className="mb-8 flex items-center justify-between">
+  <div>
+    <h1 className="text-3xl font-bold text-gray-900 mb-2">User Management</h1>
+    <p className="text-gray-600">Manage user accounts, roles, and permissions</p>
+  </div>
+
+  <button
+    onClick={() => window.open('http://127.0.0.1:8000/admin/accounts/user/', '_blank')}
+    className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-black transition-colors"
+  >
+    <Shield className="w-4 h-4" />
+    Django Admin
+  </button>
+</div>
 
       <div className="bg-white rounded-xl border border-gray-200 p-4 mb-6">
         <div className="flex flex-col lg:flex-row gap-4">

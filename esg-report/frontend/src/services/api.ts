@@ -57,7 +57,6 @@ async function request<T>(
     throw new Error(errorMessage);
   }
 
-  // Handle empty responses (204 No Content)
   if (res.status === 204) return {} as T;
   return res.json() as Promise<T>;
 }
@@ -132,6 +131,20 @@ export const authApi = {
   },
 
   me: (): Promise<ApiUser> => request('GET', '/auth/me/'),
+
+  // ── 4.1 Восстановление пароля по email ──────────────────────────────────────
+  requestPasswordReset: (email: string): Promise<{ detail: string }> => {
+    const resetUrl = `${window.location.origin}/reset-password`;
+    return request<{ detail: string }>(
+      'POST',
+      '/auth/password-reset/',
+      { email: email.trim().toLowerCase(), reset_url: resetUrl },
+      false
+    );
+  },
+
+  confirmPasswordReset: (token: string, password: string): Promise<{ detail: string }> =>
+    request<{ detail: string }>('POST', '/auth/password-reset/confirm/', { token, password }, false),
 };
 
 // ─── Users ───────────────────────────────────────────────────────────────────
@@ -183,6 +196,18 @@ export const companiesApi = {
 
 // ─── Questionnaires ───────────────────────────────────────────────────────────
 
+// 4.3 Формулы расчёта баллов (совпадают с backend ScoreFormula choices)
+export const SCORE_FORMULA_OPTIONS = [
+  { value: '',               label: 'Авто (по типу вопроса)' },
+  { value: 'linear_desc',    label: 'Линейная убывающая (для выбора)' },
+  { value: 'proportional',   label: 'Пропорциональная (мультивыбор)' },
+  { value: 'scale_linear',   label: 'Линейная шкала' },
+  { value: 'numeric_cap',    label: 'Числовая с ограничением' },
+  { value: 'binary',         label: 'Бинарная (да/нет)' },
+] as const;
+
+export type ScoreFormulaValue = '' | 'linear_desc' | 'proportional' | 'scale_linear' | 'numeric_cap' | 'binary';
+
 export interface ApiQuestion {
   id: number;
   category: 'E' | 'S' | 'G';
@@ -193,6 +218,9 @@ export interface ApiQuestion {
   weight: number;
   order: number;
   is_required: boolean;
+  // 4.3 Настраиваемые правила расчёта баллов
+  score_formula: ScoreFormulaValue;
+  scale_max: number;
 }
 
 export interface ApiQuestionnaire {
@@ -204,6 +232,10 @@ export interface ApiQuestionnaire {
   created_at: string;
   questionCount: number;
   questions?: ApiQuestion[];
+  // 4.3 Веса блоков E/S/G
+  weight_e: number;
+  weight_s: number;
+  weight_g: number;
 }
 
 export const questionnairesApi = {
@@ -211,6 +243,9 @@ export const questionnairesApi = {
   get: (id: number): Promise<ApiQuestionnaire> => request('GET', `/questionnaires/${id}/`),
   create: (data: Partial<ApiQuestionnaire>): Promise<ApiQuestionnaire> =>
     request('POST', '/questionnaires/', data),
+  // 4.3 Обновление опросника (веса E/S/G, вопросы, формулы)
+  update: (id: number, data: Partial<ApiQuestionnaire>): Promise<ApiQuestionnaire> =>
+    request('PATCH', `/questionnaires/${id}/`, data),
 };
 
 // ─── Reports ─────────────────────────────────────────────────────────────────
@@ -245,7 +280,15 @@ export interface ApiAnswer {
 }
 
 export const reportsApi = {
-  list: (): Promise<ApiReport[]> => request('GET', '/reports/'),
+  // 5.2 Поддержка фильтра по периоду
+  list: (params?: { period?: number; company?: number; search?: string }): Promise<ApiReport[]> => {
+    const q = new URLSearchParams();
+    if (params?.period)  q.set('period',  String(params.period));
+    if (params?.company) q.set('company', String(params.company));
+    if (params?.search)  q.set('search',  params.search);
+    const qs = q.toString();
+    return request('GET', `/reports/${qs ? `?${qs}` : ''}`);
+  },
   get: (id: number): Promise<ApiReport> => request('GET', `/reports/${id}/`),
   create: (data: { company: number; questionnaire: number; period: number }): Promise<ApiReport> =>
     request('POST', '/reports/', data),
@@ -269,10 +312,25 @@ export interface DashboardStats {
   latestSScore?: number | null;
   latestGScore?: number | null;
   totalSubmittedReports?: number;
+  companyRankings?: Array<{
+    id: number; name: string; industry: string; region: string;
+    avgScore: number; eScore: number; sScore: number; gScore: number; reportCount: number;
+  }>;
+  industryStats?: Array<{ industry: string; e: number; s: number; g: number; total: number }>;
+  scoreDistribution?: Array<{ range: string; count: number }>;
+  trendData?: Array<{ period: string; e: number; s: number; g: number; total: number }>;
 }
 
 export const dashboardApi = {
-  stats: (): Promise<DashboardStats> => request('GET', '/dashboard/stats/'),
+  // 5.2 Фильтр по периоду в дашборде
+  stats: (params?: { period?: number; industry?: string; region?: string }): Promise<DashboardStats> => {
+    const q = new URLSearchParams();
+    if (params?.period)   q.set('period',   String(params.period));
+    if (params?.industry) q.set('industry', params.industry);
+    if (params?.region)   q.set('region',   params.region);
+    const qs = q.toString();
+    return request('GET', `/dashboard/stats/${qs ? `?${qs}` : ''}`);
+  },
 };
 
 // ─── Periods ─────────────────────────────────────────────────────────────────
