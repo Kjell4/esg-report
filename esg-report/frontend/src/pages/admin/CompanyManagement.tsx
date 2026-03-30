@@ -84,9 +84,22 @@ export function CompanyManagement() {
                 <option value="almaty_city">г. Алматы</option>
                 <option value="astana">г. Астана</option>
                 <option value="shymkent">г. Шымкент</option>
-                <option value="karaganda">Карагандинская обл.</option>
+                <option value="">Акмолинская обл.</option>
+                <option value="aktobe">Актюбинская обл.</option>
+                <option value="atyrau">Атырауская обл.</option>
                 <option value="east_kaz">Восточно-Казахстанская обл.</option>
+                <option value="zhambyl">Жамбылская обл.</option>
+                <option value="zhetysu">Жетысуская обл.</option>
+                <option value="west_kaz">Западно-Казахстанская обл.</option>
+                <option value="karaganda">Карагандинская обл.</option>
+                <option value="kostanay">Костанайская обл.</option>
+                <option value="kyzylorda">Кызылординская обл.</option>
+                <option value="mangystau">Мангистауская обл.</option>
+                <option value="pavlodar">Павлодарская обл.</option>
+                <option value="north_kaz">Северо-Казахстанская обл.</option>
+                <option value="turkestan">Туркестанская обл.</option>
                 <option value="almaty_reg">Алматинская обл.</option>
+                <option value="ulytau">Улытауская обл.</option>
               </select>
               <select value={form.industry} onChange={e => setForm(f => ({ ...f, industry: e.target.value }))}
                 className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm">
